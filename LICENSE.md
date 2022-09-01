@@ -1,8 +1,8 @@
 /*******************************************************
- * Copyright (C) 2010-2011 {name} <{email}>
+ * Copyright (C) 2022-2023 Kustosss <kramler.gamespl@gmail.com>
  * 
- * This file is part of {project}.
+ * This file is part of KusCraft.pl repository.
  * 
- * {project} can not be copied and/or distributed without the express
- * permission of {name}
+ * KusCraft.pl can not be copied and/or distributed without the express
+ * permission of Kustosss
  *******************************************************/
