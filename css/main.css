@@ -55,7 +55,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 52px;
+    font-size: 3.3vw;
     font-family: 'Major Mono Display', monospace;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
@@ -71,7 +71,6 @@ header h1 {
     right: 30px;
     display: flex;
     --animate-delay: 4s;
-    overflow: hidden;
 }
 
 .header-social-media img {
@@ -263,4 +262,74 @@ footer {
 ::-webkit-scrollbar-thumb {
     background: #22742f;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* RESPONSIVENESS */
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (min-width: 0) {
+    .left {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+    .main-title {
+        font-size: 15vw;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+    footer > div {
+        margin: 20px 0;
+    }
+    .footer-info {
+        width: auto;
+        order: 1;
+    }
+    .footer-links {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+    }
+    .footer-social-media {
+        order: 3;
+    }
+    .footer-logo {
+        width: 70px;
+    }
+    .copyright {
+        font-size: 16px;
+    }
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    .main-title {
+        font-size: 118px;
+    }
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    /* set footer here */
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .left {
+        width: 60%;
+    }
+    .right {
+        display: flex;
+    }
+    .main-content {
+        margin-bottom: 0;
+    }
 }
